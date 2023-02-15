@@ -1,0 +1,9 @@
+query GetPrices($symbol: String!, $fromDate: String) {
+  prices(symbol: $symbol, fromDate: $fromDate) {
+    symbol
+    historical {
+      date
+      close
+    }
+  }
+}

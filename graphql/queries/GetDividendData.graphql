@@ -1,0 +1,5 @@
+query GetDividendData($symbol: String!) {
+  keyMetricsTTM(symbol: $symbol) {
+    payoutRatioTTM
+  }
+}

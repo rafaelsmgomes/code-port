@@ -1,0 +1,58 @@
+fragment IncomeStatementPartial on IncomeStatement {
+  date
+  period
+  revenue
+  ebitda
+  netIncome
+  grossProfitRatio
+  depreciationAndAmortization
+  eps
+  incomeTaxExpense
+  interestExpense
+  interestIncome
+  incomeBeforeTax
+  otherExpenses
+  researchAndDevelopmentExpenses
+  operatingIncome
+}
+
+fragment BS on BalanceSheet {
+  date
+  totalDebt
+}
+
+fragment CF on CashFlow {
+  date
+  operatingCashFlow
+  capitalExpenditure
+  depreciationAndAmortization
+  freeCashFlow
+  netCashUsedForInvestingActivites
+}
+
+query GetIncomeStatement($symbol: String!) {
+  incomeStatement(symbol: $symbol) {
+    ...IncomeStatementPartial
+  }
+}
+
+query GetTtmFinancials($symbol: String!) {
+  ttmIncomeStatement(symbol: $symbol) {
+    ...IncomeStatementPartial
+  }
+  quarterIncomeStatement: incomeStatement(symbol: $symbol, quarter: true) {
+    ...IncomeStatementPartial
+  }
+  ttmBalanceSheet(symbol: $symbol) {
+    ...BS
+  }
+  quarterBalanceSheet: balanceSheet(symbol: $symbol, quarter: true) {
+    ...BS
+  }
+  ttmCashFlow(symbol: $symbol) {
+    ...CF
+  }
+  quarterCashFlow: cashFlow(symbol: $symbol, quarter: true) {
+    ...CF
+  }
+}

@@ -1,0 +1,58 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#ede6f5',
+          100: '#d2c3e7',
+          200: '#b59bd8',
+          300: '#9872c9',
+          400: '#8253bd',
+          500: '#6c34b2',
+          600: '#632fac', // primary
+          700: '#5727a3',
+          800: '#4b219b',
+          900: '#38148d',
+        },
+        Black: '#000000ff',
+        PersianIndigo: '#3a0270ff',
+        Indigo: '#4b009dff',
+        RussianViolet: '#1d003dff',
+        ElectricViolet: '#9400feff',
+        Violet: '#9955ff',
+        Magenta: '#f900feff',
+        Indigo2: '#4a0097ff',
+        RichBlackFogra39: '#000003ff',
+        Purple: '#6201c1ff',
+        RussianViolet2: '#24004cff',
+        Xiketic: '#0C0018',
+        Indigo: '#440A76',
+        Amethyst: '#9E54D7',
+        Xiketic2: '#0E0517',
+        RussianViolet: '#23024B',
+        PurpleX11: '#9937E5',
+        BlueVioletColorWheel: '#502373',
+        ElectricPurple: '#B043F6',
+        LavenderFloral: '#C687EF',
+
+        DodgerBlue: '#4998F9ff',
+        RichBlackFogra39: '#000603ff',
+        DarkSlateBlue: '#413A90ff',
+        DenimBlue: '#1B3DA9ff',
+        Xiketic: '#07081Cff',
+        Heliotrope: '#DD84FFff',
+        RoyalPurple: '#8057C0ff',
+        RoyalBlueDark: '#0E276Dff',
+        VioletBlue: '#3950B2ff',
+        ElectricBlue: '#73F0FDff',
+      },
+    },
+    fontFamily: {
+      sans: ['Geometria', 'Inter'],
+      body: ['Geometria', 'Inter'],
+    },
+  },
+  plugins: [],
+}

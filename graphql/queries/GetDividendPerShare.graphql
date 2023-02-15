@@ -1,0 +1,6 @@
+query GetDividendPerShare($symbol: String!, $quarter: Boolean, $limit: Float) {
+  keyMetrics(symbol: $symbol, quarter: $quarter, limit: $limit) {
+    dividendYield
+    date
+  }
+}

@@ -1,0 +1,116 @@
+query getProfileData($symbol: String!, $fromDate: String) {
+  companyProfile(symbol: $symbol) {
+    ...ProfilePartial
+  }
+  prices(symbol: $symbol, fromDate: $fromDate) {
+    historical {
+      close
+      date
+    }
+  }
+
+  metrics: keyMetricsTTM(symbol: $symbol) {
+    ...KeyMetricsPartial
+  }
+
+  ev: enterpriseValue(symbol: $symbol) {
+    minusCashAndCashEquivalents
+    addTotalDebt
+  }
+
+  incomeStatement(symbol: $symbol, limit: 4, quarter: true) {
+    ...LatestIncStatement
+  }
+
+  quote(symbol: $symbol) {
+    price
+  }
+}
+
+fragment ProfilePartial on CompanyProfile {
+  symbol
+  description
+  exchangeShortName
+  industry
+  ipoDate
+  mktCap
+  range
+  ceo
+  country
+  sector
+  website
+  companyName
+  changes
+  currency
+  fullTimeEmployees
+  website
+}
+
+fragment TtmRatios on FinancialRatioTTM {
+  debtRatioTTM
+  dividendPerShareTTM
+  dividendYieldTTM
+  enterpriseValueMultipleTTM
+  freeCashFlowOperatingCashFlowRatioTTM
+  freeCashFlowPerShareTTM
+  interestCoverageTTM
+  longTermDebtToCapitalizationTTM
+  netProfitMarginTTM
+  payoutRatioTTM
+  priceBookValueRatioTTM
+  priceCashFlowRatioTTM
+  priceEarningsRatioTTM
+  priceFairValueTTM
+  priceSalesRatioTTM
+  priceToBookRatioTTM
+  priceToSalesRatioTTM
+  returnOnAssetsTTM
+  returnOnCapitalEmployedTTM
+  returnOnEquityTTM
+}
+
+fragment LatestIncStatement on IncomeStatement {
+  eps
+  epsdiluted
+}
+
+fragment KeyMetricsPartial on KeyMetricsTTM {
+  marketCapTTM
+  enterpriseValueTTM
+
+  revenuePerShareTTM
+  netIncomePerShareTTM
+  operatingCashFlowPerShareTTM
+  freeCashFlowPerShareTTM
+  cashPerShareTTM
+
+  bookValuePerShareTTM
+  tangibleBookValuePerShareTTM
+
+  peRatioTTM
+  priceToSalesRatioTTM
+  pbRatioTTM
+  ptbRatioTTM
+  evToSalesTTM
+  enterpriseValueOverEBITDATTM
+  evToOperatingCashFlowTTM
+  evToFreeCashFlowTTM
+
+  earningsYieldTTM
+  freeCashFlowYieldTTM
+  incomeQualityTTM
+  dividendPerShareTTM
+  dividendYieldPercentageTTM
+  payoutRatioTTM
+
+  shareholdersEquityPerShareTTM
+
+  debtToEquityTTM
+  debtToAssetsTTM
+  netDebtToEBITDATTM
+  interestCoverageTTM
+
+  roicTTM
+  roeTTM
+  returnOnTangibleAssetsTTM
+}

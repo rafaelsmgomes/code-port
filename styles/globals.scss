@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: normal;
+  src: url('../public/fonts/Inter-Regular.woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: normal;
+  font-style: italic;
+  src: url('../public/fonts/Inter-Italic.woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 900;
+  src: url('../public/fonts/Inter-Black.woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 900;
+  font-style: italic;
+  src: url('../public/fonts/Inter-BlackItalic.woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: bold;
+  src: url('../public/fonts/Inter-Bold.woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: bold;
+  font-style: italic;
+  src: url('../public/fonts/Inter-BoldItalic.woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 700;
+  src: url('../public/fonts/Inter-ExtraBold.woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-style: italic;
+  src: url('../public/fonts/Inter-ExtraBoldItalic.woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 100;
+  src: url('../public/fonts/Inter-ExtraLight.woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 100;
+  font-style: italic;
+  src: url('../public/fonts/Inter-ExtraLightItalic.woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 300;
+  src: url('../public/fonts/Inter-Light.woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 300;
+  font-style: italic;
+  src: url('../public/fonts/Inter-LightItalic.woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 500;
+  src: url('../public/fonts/Inter-Medium.woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-style: italic;
+  src: url('../public/fonts/Inter-MediumItalic.woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 200;
+  src: url('../public/fonts/Inter-Thin.woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 200;
+  font-style: italic;
+  src: url('../public/fonts/Inter-ThinItalic.woff');
+}
+@font-face {
+  font-family: 'Geometria';
+  font-weight: 900;
+  src: url('../public/fonts/Geometria-ExtraBold.woff');
+}
+@font-face {
+  font-family: 'Geometria';
+  font-weight: 900;
+  font-style: italic;
+  src: url('../public/fonts/Geometria-ExtraBoldItalic.woff');
+}
+@font-face {
+  font-family: 'Geometria';
+  font-weight: 600;
+  src: url('../public/fonts/Geometria-Bold.woff');
+}
+@font-face {
+  font-family: 'Geometria';
+  font-weight: 600;
+  font-style: italic;
+  src: url('../public/fonts/Geometria-BoldItalic.woff');
+}
+@font-face {
+  font-family: 'Geometria';
+  font-weight: 500;
+  src: url('../public/fonts/Geometria-Medium.woff');
+}
+@font-face {
+  font-family: 'Geometria';
+  font-weight: 500;
+  font-style: italic;
+  src: url('../public/fonts/Geometria-MediumItalic.woff');
+}
+
+@font-face {
+  font-family: 'Geometria';
+  font-weight: 400;
+  src: url('../public/fonts/Geometria.woff');
+}
+@font-face {
+  font-family: 'Geometria';
+  font-weight: 400;
+  font-style: italic;
+  src: url('../public/fonts/Geometria-Italic.woff');
+}
+@font-face {
+  font-family: 'Geometria';
+  font-weight: 300;
+  src: url('../public/fonts/Geometria-Light.woff');
+}
+@font-face {
+  font-family: 'Geometria';
+  font-weight: 300;
+  font-style: italic;
+  src: url('../public/fonts/Geometria-LightItalic.woff');
+}
+
+@font-face {
+  font-family: 'Geometria';
+  font-weight: 200;
+  src: url('../public/fonts/Geometria-ExtraLight.woff');
+}
+@font-face {
+  font-family: 'Geometria';
+  font-weight: 200;
+  font-style: italic;
+  src: url('../public/fonts/Geometria-ExtraLightItalic.woff');
+}
+@font-face {
+  font-family: 'Geometria';
+  font-weight: 100;
+  src: url('../public/fonts/Geometria-Thin.woff');
+}
+@font-face {
+  font-family: 'Geometria';
+  font-weight: 100;
+  font-style: italic;
+  src: url('../public/fonts/Geometria-ThinItalic.woff');
+}
+
+body {
+  @apply bg-slate-900;
+}

@@ -1,0 +1,27 @@
+query GetCompanyProfile($symbol: String!) {
+  companyProfile(symbol: $symbol) {
+    symbol
+    price
+    mktCap
+    lastDiv
+    range
+    changes
+    companyName
+    currency
+    country
+    dcf
+    dcfDiff
+    description
+    exchangeShortName
+    fullTimeEmployees
+    industry
+    ipoDate
+    isAdr
+    isEtf
+    isFund
+    state
+    sector
+    website
+    zip
+  }
+}

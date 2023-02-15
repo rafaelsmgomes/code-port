@@ -1,0 +1,25 @@
+query GetTTMRatio($symbol: String!) {
+  ttmRatios(symbol: $symbol) {
+    assetTurnoverTTM
+    debtRatioTTM
+    dividendPerShareTTM
+    dividendYieldTTM
+    enterpriseValueMultipleTTM
+    freeCashFlowOperatingCashFlowRatioTTM
+    freeCashFlowPerShareTTM
+    interestCoverageTTM
+    longTermDebtToCapitalizationTTM
+    netProfitMarginTTM
+    payoutRatioTTM
+    priceBookValueRatioTTM
+    priceCashFlowRatioTTM
+    priceEarningsRatioTTM
+    priceFairValueTTM
+    priceSalesRatioTTM
+    priceToBookRatioTTM
+    priceToSalesRatioTTM
+    returnOnAssetsTTM
+    returnOnCapitalEmployedTTM
+    returnOnEquityTTM
+  }
+}
